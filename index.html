@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header><a href="#" class="logo"><span>S</span>e<span>r</span>k<span>A</span>n<span>
+                G</span>ü<span>n</span>T<span>i</span>n</a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="">ÜberUns</a></li>
+            <li><a href="https://serkanguentin-cafe-app.netlify.app" class="">Project</a></li>
+            <li><a href="#" class="">Portfolio</a></li>
+            <li><a href="#" class="">Kontakt</a></li>
+
+        </ul>
+        <div class="menu-btn"><span>INTRO</span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-text">
+            <h1>
+                Serkan Güntin
+            </h1>
+            <span class="typing"></span>
+
+            <p> Als ein leidenschaftlischer Developer entwickle ich gerne Frontend und Backend </p>
+            <div class="main-btn">
+                <a href="" class="btn">Download CV</a>
+                <a href="" class="btn two">Kontakt</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="./dosya/Unbenannt.png" alt="foto">
+        </div>
+        <script>
+
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open');
+            }
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('.typing', {
+
+                strings: ['AnwendungsEntwickler', 'Backend Developer', 'Software Developer'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true
+            });
+        </script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="./dosya/script.js"></script>
+
+    </section>
+
+    <div class="share">
+        <p> Check out my:
+        </p>
+        <div class="sozial">
+            <a href=""><i class='bx bxl-github'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href=""><i class='bx bxl-whatsapp'></i></a>
+
+        </div>
+    </div>
+</body>
+
+</html>
