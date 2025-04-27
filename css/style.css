@@ -100,13 +100,15 @@ section{
     width: 730px;
     height: 730px;
 }
-img{ margin-top: 180px;
-    /*margin-left:100px; */
-    width: 25%;
-    height: 31%;
+
+img{ 
+    margin-top: 180px;
+    margin-left: 80px; /* Burayı ekledim, değeri isteğine göre arttırabilirsin */
+    width: 40%; /* Fotoğrafı büyütmek için yüzdeyi artırdım */
+    height: auto; /* Yüksekliği otomatik yaparsak oranı korur */
     border-radius: 100%;
-    
 }
+
 .home-text span {
     padding: 5px 25px;
     background: linear-gradient(130.08deg,#383528 0%,#191919 100%);
